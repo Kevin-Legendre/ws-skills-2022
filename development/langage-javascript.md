@@ -6,45 +6,59 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les `structures` de base du langage ❌ / ✔️
-- les normes `ecmascript` ❌ / ✔️
-- l'utilisation de l'`asynchrone` ❌ / ✔️
-- les spécifités du mot-clef `this` ❌ / ✔️
+- les `structures` de base du langage ✔️
+- les normes `ecmascript` ✔️
+- l'utilisation de l'`asynchrone` ✔️
+- les spécifités du mot-clef `this` ✔️
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté ❌ / ✔️
+### Un exemple de code commenté ✔️
 
 ```javascript
-(e) => mc2;
+const url = ('https://api.github.com/users/Kevin-Legendre')
+
+const getGithubProfileInfo = async () => {
+  try {
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log('data: ', data)
+  } catch (err) {
+    console.error('Une erreur est survenue')
+  }
+}
+
+getGithubProfileInfo()
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[lien github](https://github.com/Kevin-Legendre/les_argonauts)
 
-Description :
+Description : Project du test technique pour les admissions de l'école avce un framework
 
-### J'ai utilisé ce langage en production ❌ / ✔️
+### J'ai utilisé ce langage en production ✔️
 
 [lien du projet](...)
 
-Description :
+❌ avoir des projets à montrer
 
-### J'ai utilisé ce langage en environement professionnel ❌ / ✔️
+Description : je n'ai pas de projet personnel en production. En revanche les projets d'entreprise le sont.
 
-Description :
+### J'ai utilisé ce langage en environement professionnel ✔️
+
+Description : j'utilise JS au quotiden en entreprise, avec des frameworks react, vue, avec Node.js etc..
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Understanding ECMAScript 6
 
-- lien
-- description
+- https://www.amazon.com/Understanding-ECMAScript-Definitive-JavaScript-Developers/dp/1593277571
+- pour approfondir mes compétances
 
 ## 🚧 Je franchis les obstacles
 
-### Point de blocage ❌ / ✔️
+### Point de blocage ❌
 
 Description:
 
