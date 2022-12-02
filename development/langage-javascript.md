@@ -39,8 +39,6 @@ Description : Project du test technique pour les admissions de l'école avce un 
 
 ### J'ai utilisé ce langage en production ✔️
 
-[lien du projet](...)
-
 ❌ avoir des projets à montrer
 
 Description : je n'ai pas de projet personnel en production. En revanche les projets d'entreprise le sont.
