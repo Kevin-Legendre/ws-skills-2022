@@ -6,30 +6,58 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les tests unitaires ❌ / ✔️
-- les mocks ❌ / ✔️
-- les tests d'integration ❌ / ✔️
-- les tests de bout en bout (end to end) ❌ / ✔️
-- le TDD ❌ / ✔️
-- les tests par snapshot ❌ / ✔️
+- les tests unitaires ✔️
+- les mocks ✔️
+- les tests d'integration ✔️
+- les tests de bout en bout (end to end) ✔️
+- le TDD ✔️
+- les tests par snapshot ❌
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté  ✔️
 
-### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+```javascript
+describe("Cart", () => {
+  // Dans cet exemple on test que le bouton "Purchase" dans le panier est bien rendu
+  it("renders a button", () => {
+    render(<Cart cancel={() => {}} />);
+    expect(screen.getByText(/Purchase/i)).toBeInTheDocument();
+  });
+
+  /* Dans cet exemple on simule un clic sur le le bouton "purchase"
+     et on test que le texte 'Thank you' s'affiche bien à l'écran
+     après le clic sur le bouton
+  */
+    describe("When user clicks purchase button", () => {
+    it("renders Thank you!", () => {
+      render(<Cart cancel={() => {}} />);
+      fireEvent.click(screen.getByText(/Purchase/i));
+      expect(screen.getByText(/Thank you !/i)).toBeInTheDocument();
+    });
+  });
+})
+
+```
+### Utilisation dans un projet ✔️
+
+JustOneCar projet de fin d'année
+
+[lien github](https://github.com/WildCodeSchool/2022-11-turing-JustOneCar)
 
 Description :
 
-### Utilisation en production si applicable❌ / ✔️
+Dans ce projet nous avons mis en place des test unitaires pour tester des composants coté front,  
+pour le coté back de notre appliocation nous avons testé certaines méthodes de l'authentification des utilisateurs.
 
-[lien du projet](...)
+### Utilisation en production si applicable ❌
+
+
 
 Description :
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ❌
 
 Description :
 
